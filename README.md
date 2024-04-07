@@ -1,1 +1,1 @@
-Hosted Link:[https://main--netflix.netlify.app/]
+Hosted Link:(https://main--netflix.netlify.app/)
