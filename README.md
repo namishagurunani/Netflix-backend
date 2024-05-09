@@ -1,7 +1,7 @@
 # Netflix-inspired application Backend API Documentation
 
 Welcome to the documentation for the Netflix-inspired application Backend API. This document provides an overview of the available endpoints, their functionalities, and usage instructions.
-# [Demo](https://main--netflix.netlify.app/)
+# [Demo](https://netflix-website.netlify.app/)
 ## Introduction
 
 "This API serves as the backend for our Netflix-inspired application, providing various endpoints for user authentication, including registration, login, and logout functionalities."
