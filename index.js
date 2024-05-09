@@ -1,13 +1,11 @@
-import express from "express";
-import dotenv from "dotenv";
-import databaseConnection from "./utils/database.js";
-import cookieParser from "cookie-parser";
-import userRoute from "./routes/userRoute.js";
-import cors from "cors";
+import express from 'express';
+import dotenv from 'dotenv';
+import databaseConnection from './utils/database.js';
+import cookieParser from 'cookie-parser';
+import cors from 'cors';
+import userRoute from './routes/userRoute.js';
 
-dotenv.config({
-    path: ".env"
-});
+dotenv.config();
 
 const app = express();
 
@@ -29,12 +27,12 @@ const corsOptions = {
 app.use(cors(corsOptions));
 
 // Routes
-app.use("/api/v1/user", userRoute);
+app.use('/api/v1/user', userRoute);
 
 // Get the port from environment variables or use a default port
-const port = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
 // Start the server
-app.listen(port, () => {
-    console.log(`Server listening at port ${port}`);
+app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
 });
