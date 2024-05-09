@@ -19,7 +19,7 @@ app.use(cookieParser());
 
 // Define CORS options
 const corsOptions = {
-    origin: ['http://localhost:3000', 'https://main--netflix.netlify.app'],
+    origin: ['https://main--netflix.netlify.app'], // Update allowed origin for production
     credentials: true
 };
 
