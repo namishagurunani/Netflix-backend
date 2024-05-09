@@ -19,8 +19,8 @@ app.use(cookieParser());
 
 // Define CORS options
 const corsOptions = {
-    origin: ['https://main--netflix.netlify.app'], // Update allowed origin for production
-    credentials: true
+  origin: 'https://netflix-website.netlify.app', // Allow requests from your frontend URL
+  credentials: true // Allow credentials (e.g., cookies) to be sent with requests
 };
 
 // Enable CORS with the specified options
@@ -34,5 +34,5 @@ const PORT = process.env.PORT || 3000;
 
 // Start the server
 app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
+  console.log(`Server is running on port ${PORT}`);
 });
